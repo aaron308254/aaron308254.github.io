@@ -53,8 +53,8 @@ export const projects: Project[] = [
     visibility: "public",
     pattern: "fairway",
     previewImage: {
-      src: "https://raw.githubusercontent.com/aaron308254/Golf-Scoring-Mobile-App/main/docs/images/HomeScreen.png",
-      alt: "Golf Scoring Mobile App home screen",
+      src: "https://raw.githubusercontent.com/aaron308254/Golf-Scoring-Mobile-App/main/docs/images/ProfileStats.png",
+      alt: "Golf Scoring Mobile App profile stats screen",
     },
     readmeSummary: [
       "Expo React Native app for tracking golf rounds, player profiles, scorecards, and course history.",
