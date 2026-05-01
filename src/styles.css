@@ -108,6 +108,13 @@ main {
   --pattern-size: 100% 126px;
 }
 
+.pattern-fairway {
+  --pattern-layer:
+    radial-gradient(ellipse at center, color-mix(in srgb, var(--accent), transparent 88%) 0 2px, transparent 3px 100%),
+    repeating-linear-gradient(115deg, transparent 0 34px, color-mix(in srgb, var(--accent), transparent 92%) 34px 36px, transparent 36px 68px);
+  --pattern-size: 78px 78px, 220px 220px;
+}
+
 .scanline {
   position: absolute;
   inset: 0;

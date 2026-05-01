@@ -8,7 +8,7 @@ export type Project = {
   demoLabel?: string;
   updated: string;
   visibility: "public" | "private";
-  pattern: "grid" | "scoreboard" | "console";
+  pattern: "grid" | "scoreboard" | "console" | "fairway";
   previewImage?: {
     src: string;
     alt: string;
@@ -41,6 +41,30 @@ export const projects: Project[] = [
       accent: "#69f5ff",
       secondary: "#6b7cff",
       wash: "rgba(105, 245, 255, 0.16)",
+    },
+  },
+  {
+    id: "golf-scoring-mobile-app",
+    name: "Golf Scoring Mobile App",
+    repo: "aaron308254 / Golf-Scoring-Mobile-App",
+    stack: ["Expo", "React Native", "TypeScript", "AsyncStorage"],
+    repoUrl: "https://github.com/aaron308254/Golf-Scoring-Mobile-App",
+    updated: "2026",
+    visibility: "public",
+    pattern: "fairway",
+    previewImage: {
+      src: "https://raw.githubusercontent.com/aaron308254/Golf-Scoring-Mobile-App/main/docs/images/HomeScreen.png",
+      alt: "Golf Scoring Mobile App home screen",
+    },
+    readmeSummary: [
+      "Expo React Native app for tracking golf rounds, player profiles, scorecards, and course history.",
+      "Built for quick iPhone round entry, including landscape scorecard entry for wider score views.",
+      "Stores profiles and scorecards locally with AsyncStorage so data remains after closing the app.",
+    ],
+    theme: {
+      accent: "#36f59b",
+      secondary: "#69f5ff",
+      wash: "rgba(54, 245, 155, 0.16)",
     },
   },
   {
