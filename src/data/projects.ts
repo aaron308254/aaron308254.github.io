@@ -8,7 +8,7 @@ export type Project = {
   demoLabel?: string;
   updated: string;
   visibility: "public" | "private";
-  pattern: "grid" | "scoreboard" | "console" | "fairway";
+  pattern: "grid" | "scoreboard" | "console" | "fairway" | "court";
   previewImage?: {
     src: string;
     alt: string;
@@ -65,6 +65,31 @@ export const projects: Project[] = [
       accent: "#36f59b",
       secondary: "#69f5ff",
       wash: "rgba(54, 245, 155, 0.16)",
+    },
+  },
+  {
+    id: "nba-teammate-chain",
+    name: "NBA Teammate Chain",
+    repo: "aaron308254 / NBA-Teammate-Chain",
+    stack: ["React", "TypeScript", "FastAPI", "WebSocket", "nba_api", "pandas"],
+    repoUrl: "https://github.com/aaron308254/NBA-Teammate-Chain",
+    demoUrl: "https://aaron308254.github.io/NBA-Teammate-Chain/",
+    updated: "2026",
+    visibility: "public",
+    pattern: "court",
+    previewImage: {
+      src: "https://github.com/user-attachments/assets/208a7935-a671-4bfb-a87a-28cd59fefde0",
+      alt: "NBA Teammate Chain gameplay screen",
+    },
+    readmeSummary: [
+      "Full-stack NBA teammate-link game built with React, TypeScript, FastAPI, nba_api, and pandas.",
+      "Supports AI opponents and live four-player queues with WebSocket room state, turn timers, repeat checks, and win tracking.",
+      "Uses a Render-hosted FastAPI backend to check nba_api data for valid and invalid NBA teammate links.",
+    ],
+    theme: {
+      accent: "#ff7a1a",
+      secondary: "#69f5ff",
+      wash: "rgba(255, 122, 26, 0.15)",
     },
   },
   {
